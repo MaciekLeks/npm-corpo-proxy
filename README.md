@@ -4,7 +4,7 @@ npm-corpo-proxy bash script for those who work behind a corporate web proxy and 
 1. npm installed
 2. web proxy server host and port is known (if .pac file is used then open it and find ip and port of the web server)
 3. domain name, user name and password may contain special chars
-4. execution permission granted, e.g.
+4. execution permission granted, e.g.:
 ```bash
 chmod u+x npm-corpo-proxy.sh
 ```
