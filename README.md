@@ -8,8 +8,13 @@ npm-corpo-proxy bash script for those who work behind a corporate web proxy and 
 ```bash
 chmod u+x npm-corpo-proxy.sh
 ```
+### Simple usage
+To use the script you gave to give some arguments:
+```bash
+npm-domain-proxy.sh on|off [domain] [user] [passwd] [host:port]
+```
 
-### Simple usage:
+### Example:
 Turn on proxy settings for npm:
 ```bash
 npm-corpo-proxy.sh on mydomain user123 passwdord123 126.192.0.1:9090
