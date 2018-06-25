@@ -12,7 +12,7 @@ npm-proxy.sh on mydomain user123 passwdord123 126.192.0.1:9090
 ```
 
 Now, do your job with npm and at the end turn off proxy settings:
-``bash
+```bash
 npm-coro-proxy.sh off
 ```
 
