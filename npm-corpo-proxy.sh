@@ -20,7 +20,7 @@ encode() {
   printf %s "$s"
 }
 
-usage="\nUsage: npm-domain-proxy on|off [domain] [user] [passwd] [host:port]\n"
+usage="\nUsage: npm-domain-proxy.sh on|off [domain] [user] [passwd] [host:port]\n"
 
 if [ "$1" == "on" ]; then
     if [ "$#" -ne 5 ]; then
@@ -38,6 +38,8 @@ if [ "$1" == "on" ]; then
 
     url="http://$username:$passwd@$listener"
 
+    printf "encoded url: %s\n" $url
+
     npm config set proxy $url &> /dev/null;
     if [ $? -ne 0 ]; then
         printf "'proxy' not set\n"
@@ -53,7 +55,6 @@ if [ "$1" == "on" ]; then
     else
         printf "'https-proxy' set\n"
     fi
-    echo $url
 elif [ "$1" == "off" ]; then
     if [ "$#" -ne 1 ]; then
         printf  "err: Wrong number of arguments.$usage"
