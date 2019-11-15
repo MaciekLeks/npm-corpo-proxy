@@ -11,7 +11,7 @@ chmod u+x npm-corpo-proxy.sh
 ### Simple usage
 To use the script you have to give some arguments:
 ```bash
-npm-domain-proxy.sh on|off [domain] [user] [passwd] [host:port]
+npm-corpo-proxy.sh on|off [domain] [user] [passwd] [host:port]
 ```
 
 ### Example:
